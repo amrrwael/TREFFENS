@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/product.css" />
+    <title>Treffens - Products</title>
+  </head>
+  <body>
+    <%- include('partials/header.ejs') -%>
+
+    <div class="banner"></div>
+
+    <div class="productPageContainer">
+      <div class="categoryTitle"><h2>T-shirt</h2></div>
+      <div class="card-container">
+        <a href="/item?category=Category%201&name=Product%201">
+          <div class="container">
+            <img
+              src="images/items/tshirts/glowUp/glowUpFront.png"
+              alt="Product 1"
+            />
+            <div class="overlay">
+              <div class="items"></div>
+              <div class="items head">
+                <p>Glow Up Star</p>
+                <hr />
+              </div>
+              <div class="items price">
+                <p class="old">700</p>
+                <p class="new">400</p>
+              </div>
+              <div class="items cart">
+                <i class="fa fa-shopping-cart"></i>
+                <span>ADD TO CART</span>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <%- include('partials/footer.ejs') -%>
+  </body>
+</html>
